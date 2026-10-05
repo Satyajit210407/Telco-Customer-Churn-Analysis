@@ -1,12 +1,14 @@
-# Telco Customer Churn — Machine Learning Analysis
+# Telco Customer Churn — Regression Analysis
 
 ## 📌 Project Overview
 
-This project focuses on **Machine Learning analysis of Telco Customer data** using Python and Scikit-learn.
+This project focuses on **Regression Analysis of Telco Customer data** using Python and Scikit-learn.
 
 The notebook applies **Simple Linear Regression** and **Multiple Linear Regression** to analyze the relationship between customer information and **TotalCharges**.
 
-The project is mainly focused on understanding how regression models can be applied to a real-world customer dataset.
+The main purpose of this project is to understand how regression techniques can be applied to a real-world customer dataset, perform predictions, and interpret the results.
+
+> **Note:** This is an educational and analytical project focused on understanding regression techniques. It is not a production-ready Machine Learning model or deployed prediction system.
 
 ---
 
@@ -15,28 +17,31 @@ The project is mainly focused on understanding how regression models can be appl
 The main objective of this project is to:
 
 * Analyze the Telco Customer dataset
-* Prepare numerical data for machine learning
+* Inspect and prepare numerical data
 * Understand relationships between variables
 * Apply Simple Linear Regression
 * Apply Multiple Linear Regression
-* Generate predictions
-* Evaluate regression model performance
+* Generate regression predictions
+* Evaluate regression results
+* Visualize and interpret the analysis
 
 > **Note:** The `Churn` column represents a Yes/No classification outcome. In this project, `Churn` is not used as the regression target. The target variable is `TotalCharges`.
 
 ---
 
-## 🤖 Machine Learning Models
+## 📊 Regression Analysis
 
 ### 1. Simple Linear Regression
 
 Simple Linear Regression is used to understand the relationship between a single independent variable and `TotalCharges`.
 
-The project analyzes how **customer tenure** relates to total charges.
+In this project, **customer tenure** is analyzed in relation to total charges.
 
 ```text
 TotalCharges = β₀ + β₁ × tenure
 ```
+
+The analysis helps understand how changes in customer tenure are associated with changes in total charges.
 
 ### 2. Multiple Linear Regression
 
@@ -46,7 +51,7 @@ Multiple Linear Regression is used to analyze `TotalCharges` using multiple nume
 TotalCharges = β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ
 ```
 
-This provides a broader view of the factors associated with a customer's total charges.
+This provides a broader understanding of how multiple numerical factors are associated with a customer's total charges.
 
 ---
 
@@ -84,6 +89,8 @@ Some important features include:
 TotalCharges
 ```
 
+`TotalCharges` is used as the target variable for the regression analysis.
+
 ---
 
 ## 🛠️ Technologies & Libraries
@@ -97,7 +104,7 @@ TotalCharges
 
 ---
 
-## 🔄 Machine Learning Workflow
+## 🔄 Project Workflow
 
 ```text
 Dataset
@@ -116,23 +123,25 @@ Multiple Linear Regression
    ↓
 Prediction
    ↓
-Model Evaluation
+Regression Evaluation
    ↓
 Visualization
+   ↓
+Result Interpretation
 ```
 
 ---
 
-## 📈 Model Evaluation
+## 📈 Regression Evaluation
 
-The regression models are evaluated using standard regression metrics, including:
+The regression analysis uses standard evaluation metrics, including:
 
 * **Mean Squared Error (MSE)**
 * **Mean Absolute Error (MAE)**
 * **Root Mean Squared Error (RMSE)**
 * **R² Score**
 
-These metrics help measure the prediction performance of the regression models.
+These metrics help measure the difference between actual and predicted `TotalCharges` and understand the performance of the regression analysis.
 
 ---
 
@@ -181,14 +190,14 @@ jupyter notebook
 Then open:
 
 ```text
-notebooks/Telco_Customer_Churn_Regression.ipynb
+notebook/Telco_Customer_Churn_Regression.ipynb
 ```
 
 ---
 
 ## 📦 Requirements
 
-Create a `requirements.txt` file:
+Create a `requirements.txt` file containing:
 
 ```text
 pandas
@@ -226,46 +235,4 @@ This makes the notebook easier for others to run after cloning the repository.
 
 ## 💡 Key Learning Outcomes
 
-Through this project, I gained practical experience in:
-
-* Preparing data for Machine Learning
-* Working with numerical features
-* Understanding linear relationships
-* Implementing Simple Linear Regression
-* Implementing Multiple Linear Regression
-* Making predictions using trained models
-* Evaluating regression models
-* Visualizing machine learning results
-* Using Scikit-learn for model development
-
----
-
-## 🔮 Future Improvements
-
-Possible future improvements include:
-
-* Developing a **Churn Classification** model
-* Applying Logistic Regression
-* Testing Decision Trees and Random Forest
-* Comparing multiple ML algorithms
-* Feature engineering
-* Hyperparameter tuning
-* Cross-validation
-* Model performance comparison
-
----
-
-## 👨‍💻 Author
-
-**Satyajit Pradhan**
-
-B.Tech — Computer Science & Engineering
-
-Interested in **Data Analytics, Machine Learning, SQL, and Business Intelligence**.
-
----
-
-## ⭐ Project
-
-If you find this project useful, feel free to explore the notebook and use it as a reference for learning Machine Learning and Regression.
-
+Through this p
