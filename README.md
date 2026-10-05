@@ -147,9 +147,7 @@ Telco-Customer-Churn-Analysis/
 ├── notebooks/
 │   └── Telco_Customer_Churn_Regression.ipynb
 │
-├── README.md
-│
-└── requirements.txt
+└── README.md
 ```
 
 ---
